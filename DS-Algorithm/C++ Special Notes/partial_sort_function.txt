@@ -1,0 +1,16 @@
+partial_sort(num.begin(),num.begin()+k,num.end(),greater<int>());
+
+this function is use for sort the array by a certain index "K" 
+so it is save the time 
+
+partial_sort() is O(N*log K) where N is the number of elements in array
+and K is the number of elements between middle and start.
+The partial_sort() is faster than sort() if K is significantly smaller
+than N as partial_sort() will sort first K elements whereas sort() will sort all the N elements.
+
+// nth_element()
+nth_element(): The nth_element() is an STL algorithm 
+which rearranges the list in such a way such that 
+the element at the nth position is the one which should be at that position 
+if we sort the list. It does not sort the list, just that all the elements, 
+which precede the nth element are not greater than it, and all the elements which succeed it are not less than it.
